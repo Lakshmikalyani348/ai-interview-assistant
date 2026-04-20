@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Interview Assistant</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <!-- Background Video -->
+  <div class="video-bg">
+    <video autoplay muted loop playsinline>
+      <source src="./assets/bgvideo.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="container">
+
+    <!-- NAVBAR -->
+    <div class="nav">
+      <div class="brand">
+        <h1>AI Interview Assistant</h1>
+        <small>Smart AI-based mock interviews</small>
+      </div>
+      <div class="pill" id="backendUrlLabel"></div>
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="grid">
+
+      <!-- LEFT CARD -->
+      <div class="card">
+        <h2>Interview Setup</h2>
+
+        <label>Job role</label>
+        <select id="roleSelect">
+          <option>Python Developer</option>
+          <option>Frontend Developer</option>
+          <option>Data Analyst</option>
+          <option>Java Developer</option>
+        </select>
+
+        <label>Resume (optional)</label>
+        <input type="file" accept=".pdf,.doc,.docx,.txt" />
+
+        <label>Number of questions (1–15)</label>
+        <input type="number" min="1" max="15" value="10" />
+
+        <div class="row">
+          <button class="btn primary">Start Interview</button>
+        </div>
+      </div>
+
+      <!-- RIGHT CARD -->
+      <div class="card">
+        <h2>What gets evaluated</h2>
+        <div class="kpi">
+          <div class="box">
+            <div class="value">0–15</div>
+            <div class="label">Score per question</div>
+          </div>
+          <div class="box">
+            <div class="value">Feedback</div>
+            <div class="label">Technical + communication</div>
+          </div>
+          <div class="box">
+            <div class="value">Proctoring</div>
+            <div class="label">Tab switches detected</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== AICW ROW (FULL WIDTH) ===== -->
+    <div class="aicw-row">
+      <h1>AI Careers for Women (AICW) by Microsoft & Edunet Foundation</h1>
+    </div>
+
+    <!-- ===== TEAM + GUIDE GRID ===== -->
+    <div class="team-guide-grid">
+
+      <div>
+        <h3>Team Members</h3>
+        <ul>
+          <li>R. Lakshmi Kalyani</li>
+          <li>N. Monika Priya</li>
+          <li>G. Sandhya</li>
+          <li>K. Lakshmi Prasanna</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Guide</h3>
+        <h3>Mr. Abdul Aziz Md</h3>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
